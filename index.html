@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+  <link rel='stylesheet' type='text/css' href='css/style.css'>
+  <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+
+  </head>
+  <body>
+
+    <div id='app' class='center container'>
+
+        <div id='headers'>
+          <h1 id='title'>Play the Guessing Game!</h1>
+          <h3 id='subtitle'>Guess a number between 1-100!</h3>
+        </div>
+
+      <div id='main'>
+        <div id='input-parent'>
+          <input id='players-input' class='center' placeholder="#" maxlength='3' autofocus=autofocus></input>
+          <button id='submit' class='btn btn-danger'>Go!</button>
+        </div>
+
+          <div id='guesses'>
+            <ul id='guess-list'>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+            </ul>
+          </div>
+
+        <div id="menu-btns">
+          <button id='reset' class='btn bg-warning'>Reset</button>
+          <button id='hint' class='btn bg-info'>Hint</button>
+        </div>
+      </div>
+    </div>
+
+    <div id='footer' class='center'>
+      <div class='row'>
+        <div class='col-sm-4'>
+          <a href="https://www.fullstackacademy.com/"><img src='css/fa-logo@2x.png'></img></a>
+        </div>
+
+        <div class='col-sm-4' id='name'>
+          <h4>Project by Palina Pasiukevich</h4>
+        </div>
+
+        <div class='col-sm-4'>
+          <a href="https://www.gracehopper.com/"><img id='hopper' src='css/grace_hopper_academy.png'></img></a>
+        </div>
+
+
+      </div>
+    </div>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/GuessingGame.js"></script>
+</html>
