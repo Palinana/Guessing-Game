@@ -36,7 +36,7 @@ Game.prototype.isLower = function(){
     return false;
 };
 Game.prototype.playersGuessSubmission = function(num){
-    if(typeof num !== 'number' || num < 1 || num > 100){
+    if(isNaN(num) || num < 1 || num > 100){
         throw 'That is an invalid guess.';
     }
     this.playersGuess = num;
